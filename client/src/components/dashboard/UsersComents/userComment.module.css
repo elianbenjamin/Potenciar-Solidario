@@ -1,0 +1,103 @@
+.container {
+    width: 90%;
+    margin: 3rem auto;
+}
+
+@media(min-width: 768px){
+    .container {
+        height: 80vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .container::-webkit-scrollbar {
+        display: none;
+      }
+    
+}
+.divGrid{
+    display: grid;
+}
+
+@media(min-width: 768px){
+    .divGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto); /* Ajusta 100px al tamaño mínimo que necesites */
+    gap: 1rem;
+    }
+}
+
+.cardComment{
+    border: 1px solid #ddd;
+    height: 350px; 
+    margin-top: 1rem;
+    overflow-y: auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+
+}
+.cardComment::-webkit-scrollbar {
+    display: none;
+  }
+
+.titleComment{
+    background: var(--blue);
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0;
+}
+.lenghtComment{
+    text-align: center;
+    margin: 0.5rem auto;
+}
+.textCard{
+    padding: 1rem;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.textIndex{
+    background: var(--blue);
+    display: inline-block;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 100%;
+    text-align: center;
+
+
+}
+
+.textSpan{
+    background: #fff;
+    margin-left: 0.5rem;
+    width: 70%;
+}
+.comentFlex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.coment_trash_icon{
+    color: black; 
+    transition: color 0.3s; 
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+
+    justify-content: center;
+}
+
+.coment_trash_icon:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.coment_btn_delete{
+    border: none;
+}

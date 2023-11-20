@@ -1,0 +1,13 @@
+.LeftBar__Filters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 13px;
+}
+
+    .select {
+        width: 90%;
+    }

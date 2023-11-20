@@ -1,0 +1,242 @@
+
+body{
+    box-sizing: border-box;
+}
+.question__container {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+@media(min-width: 768px){
+    .question__container {
+     height: 80vh;
+     overflow-y: scroll;
+     scrollbar-width: none;
+     -ms-overflow-style: none;
+    }
+    .question__container::-webkit-scrollbar {
+        display: none;
+      }
+    
+    
+}
+.question__grid{
+    display: grid;
+    position: relative;
+}
+@media(min-width: 768px){
+    .question__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+.question__card {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+
+}
+.question__title{
+    background: var(--blue_color);
+    color: #fff;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+
+
+}
+
+@media(min-width: 768px){
+    .question__title{
+        padding: 0.2rem;
+        margin: 0.1rem 0; /* Ajusta estos valores según sea necesario */
+        line-height: 1.4; /* Ajusta según el diseño */
+        background-clip: padding-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+   
+
+    }
+}
+
+.question__text{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+
+  @media(min-width: 768px){
+    .question__text{
+        height: 100px;
+        flex-direction: row;
+        align-items: flex-start;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    
+    }
+    .question__text::-webkit-scrollbar {
+        display: none;
+      }
+    
+  }
+.question__name__flex{
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+}
+.question__user_name{
+    margin-top: 0.5rem;
+    font-weight: 900;
+}
+.question__user_name::before {
+    content: "";
+    font-weight: 400;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+.question__options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+.question__date {
+    color:var(--darkblue) 
+}
+.question__button{
+    border: none;
+    background: transparent;
+    color: var(--blue_color);
+}
+
+.question__button:hover {
+    cursor: pointer;
+    color: var(--darkblue);
+}
+.question__asks{
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 270px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width:none ;
+    -ms-overflow-style: none; 
+    bottom: 2rem;
+    right: 0rem;
+    z-index: 1000;
+    padding: 1rem;
+    border: solid 1px #ddd;
+
+}
+.question__asks::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media(min-width: 768px){
+    .question__asks{
+        bottom: 1rem;
+        right: 7rem;
+    
+    }
+  }
+.question__btn__delete{
+    border: none;
+    width: 100%;
+    background: #fff;
+}
+.question__btn__delete:hover {
+    background: #ddd;
+    cursor: pointer;
+}
+.question__trash_icon{
+    color: black; 
+    transition: color 0.3s; 
+    background: transparent;
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    justify-content: center;
+}
+.question__trash_icon:hover{
+    color: red;
+}
+  .answer__no{
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 900;
+  }
+  .answer__card{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: solid 1px #ddd;
+
+  }
+  .answer__user{
+    font-weight: 900;
+  }
+.answer__user span {
+    color: var(--blue_color);
+}
+.answer__text{
+    max-width: 190px;
+    display: block;
+}
+
+.divInput{
+    width: 100%;
+    margin: 0 auto;
+}
+.inputSearch{
+    width: 60%;
+    margin: 1rem auto;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #e1e3e7;
+}
+.div_NoResults{
+    text-align: center;
+    margin: 1rem 0;
+    position: absolute;
+    width: 100%;
+
+}
+.title_NoResults{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+}

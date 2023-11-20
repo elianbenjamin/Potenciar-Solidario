@@ -1,0 +1,96 @@
+
+.img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}  
+.img2{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: azure;
+    border-radius: 3px;
+}
+.img3{
+  width: 30px;
+  height: 31px;
+  margin: 5px;
+  border-radius: 3px;
+
+}
+
+/* styles.css */
+
+.About {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(220, 220, 220);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.Copyright {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Ajustes de presentación para la información del miembro del equipo */
+.MembersInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50%;
+}
+    .MembersInfo__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-width: 100%;
+    }
+        .MemberInfo {
+            display: flex;
+            margin: 10px
+        }
+    .iconsContainer {
+        display: flex;
+    }
+
+
+/* Íconos de LinkedIn y GitHub */
+.LinkedInIcon, .GitHubIcon {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .MemberInfo {
+        margin: 5px 50px
+    }
+}
+@media screen and (max-width: 635px) {
+    .MembersInfo {
+        height: auto;
+    }
+  
+    .MemberInfo {
+        margin: 5px 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 512px) {
+    .MemberInfo {
+        margin: 5px auto;
+    }
+}

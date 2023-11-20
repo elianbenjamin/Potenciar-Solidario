@@ -1,0 +1,247 @@
+.dashboard{
+    height: 80vh;
+    overflow-y: scroll;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.dashboard__btn:hover{
+    background: #06213d;
+    cursor: pointer;
+}
+.dashboard__btn2:hover{
+    background: #ad0404;
+    cursor: pointer;
+
+}
+.dashboard::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.dashboard__divCards{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.dashboard__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+
+    gap: 1rem;
+    bottom: 1rem;
+}
+
+.dashboard__btn{
+   
+    background: var(--dark_blue_color);
+    color: #fff;
+    font-weight: 900;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    width: 90%;
+
+}
+.dashboard__btn2{
+    background: #d10404;
+    color: #fff;
+    font-weight: 900;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    width: 90%;
+}
+@media(min-width: 768px){
+    .dashboard__btn{
+        width: 30%;
+        right: inherit;
+        left: inherit;
+    
+    }
+    .dashboard__btn2{
+        width: 30%;
+        right: inherit;
+        left: inherit;
+    
+    }
+    .dashboard__div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.dashboard__card{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width:100%;
+    margin:  2rem auto;
+    height: 100%;
+    
+}
+.dashboard__p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    width: 90%;
+}
+
+.dashboard__img{
+    width: 100px;
+}
+@media(min-width: 768px){
+    .dashboard__img{
+        width: 100px;
+    }
+}
+.dashboard__info{
+    width: 90%;
+    margin-left: 1rem;
+
+}
+.dashboard__info h1{
+  font-size: 0.8rem;
+
+}
+.dashboard__info p{
+    font-size: 0.7rem;
+  
+  }
+  @media(min-width: 768px){
+    .dashboard__info h1{
+        font-size: 1.2rem;
+      
+      }
+      .dashboard__info p{
+          font-size: 0.9rem;
+        
+        }
+  }
+.dashboard__selected{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
+}
+.dashboard__trash{
+    width: 30px;
+}
+.dashboard__check{
+    width: 15px;
+    height: 15px;
+
+}
+
+.dashboard__trash_icon{
+    color: black; 
+    transition: color 0.3s; 
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+
+    justify-content: center;
+}
+.dashboard__trash_icon:hover {
+    color: red;
+}
+.dashboard__btn__delete{
+    color: #ff0000;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: #fff;
+   
+    display: block;
+
+
+ 
+}
+.dashboard__btn__delete:hover{
+    cursor: pointer;
+
+
+}
+
+
+.dashboard__publish{
+   
+   background: var(--blue_color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+.dashboard__publish:hover{
+    background: #06213d;
+    cursor: pointer;
+
+}
+@media(min-width: 768px){
+    .dashboard__publish,.dashboard__btn__delete{
+        width: 100px;
+ 
+    }
+
+}
+.button__flexDiv{
+    display: flex;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.button__selected{
+    border: solid 1px #ddd;	
+    padding: 0.5rem;
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    
+
+
+    
+}
+.dashboard__post{
+    text-align: center;
+    margin: 1rem auto ;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.div_NoResults{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.title_NoResults{
+    text-align: center;
+    display: block;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.dashboard__date{
+    color: var(--blue);
+    padding: 0.3rem;
+}

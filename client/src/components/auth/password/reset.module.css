@@ -1,0 +1,120 @@
+
+
+.email__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.email__label{
+    display: block;
+ 
+    width: 100%;
+    margin: 1rem auto;
+}
+.email__input {
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    padding: 1rem ;
+    border: 1px solid #cbd5e1;
+}
+.email__button {
+    width: 100%;
+    margin: 1rem auto;
+    color: #fff;
+    background: var(--blue_color);
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+   
+}
+.email__error{
+    color : #ff0000;
+    margin : 0 auto 0.5rem auto;
+    text-align: center;
+
+}
+
+.email__button:hover {
+    cursor: pointer;
+    background: var(--dark_blue_color);
+}
+
+.email__button__ok{
+    width: 50%;
+    margin: 1rem auto;
+    color: #fff;
+    background: var(--blue_color);
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.email__button__ok:hover {
+    cursor: pointer;
+    background: var(--dark_blue_color);
+}
+
+
+.reset__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 50%;
+    margin: 0 auto;
+}
+.password__field{
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+.password__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 50%;
+    margin: 0 auto;
+}
+.password__label {
+    display: block;
+    margin-bottom : 1rem;
+}
+.password__input {
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    padding: 1rem ;
+    border: 1px solid #cbd5e1;
+}
+
+.password__button__ok{
+    width: 100%;
+    margin: 1rem auto;
+    color: #fff;
+    background: var(--blue_color);
+    border: none;
+    padding: 0.5rem 0;
+    font-size: 1.3rem;
+    font-weight: 900;
+
+}
+.password__button__ok:hover {
+    cursor: pointer;
+    background: var(--dark_blue_color);
+}
+.password__error{
+    color : #ff0000;
+    margin : 0 auto 0.5rem auto;
+}

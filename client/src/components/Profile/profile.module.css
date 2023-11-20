@@ -1,0 +1,31 @@
+.profileButtonDrawer {
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+    z-index: 1000;
+    color: var(--blue); 
+    border : 2px solid var(--blue);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileButtonLogin{
+    position: absolute;
+    top: 2rem;
+    right: 0.5rem;
+    z-index: 1000;
+    color: var(--blue); 
+    border : 2px solid var(--blue);
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutButton {
+    padding-top: 10px;
+    border-top: solid gray 1px;
+}

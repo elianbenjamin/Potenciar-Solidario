@@ -1,0 +1,45 @@
+.Posts {
+    flex: 1;
+    max-height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .Cards {
+        border-top: solid #526387 1px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        overflow: scroll;
+        padding-top: 0;
+    }
+
+    .Posts__NoPosts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .NoPosts__icon {
+            height: 300px;
+            width: 300px;
+            color: var(--blue);
+        }
+
+        .NoPosts__Text {
+            text-align: center;
+        }
+
+@media screen and (max-width:768px) {
+    .Posts {
+        width: 100%
+    }
+    .Cards {
+        width: 100%;
+    }
+}
+

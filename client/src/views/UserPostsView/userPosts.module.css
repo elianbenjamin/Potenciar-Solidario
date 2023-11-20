@@ -1,0 +1,251 @@
+.user__pulblications__container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media(min-width: 768px) {
+    .user__pulblications__container {
+        width: 80%;
+    }
+}
+
+@media(min-width: 1300px) {
+    .user__pulblications__container {
+        width: 70%;
+    }
+}
+
+.user__pulblications__grid {
+    display: grid;
+    align-items: center;
+
+}
+
+@media(min-width: 768px) {
+    .user__pulblications__grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1300px) {
+    .user__pulblications__grid {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+.user__title {
+    text-align: center;
+    margin-block: 1.5rem;
+
+}
+
+.user__button_add {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+
+.user__button_add:hover {
+    background-color: var(--darkblue);
+}
+
+.user__image {
+    height: 200px;
+    object-fit: contain;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.user__publication__btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 3rem;
+    bottom: 3rem;
+    text-align: center;
+    width: 5px;
+    height: 50px;
+
+}
+
+.user__publication__card {
+    padding: 0.5rem;
+    box-shadow: -20px -9px 15px -4px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+
+}
+
+@media(min-width: 990px) {
+    .user__publication__card {
+        width: 300px;
+    }
+}
+
+@media(min-width: 1500px) {
+    .user__publication__card {
+
+        width: 350px;
+    }
+}
+
+.user__publication__h2 {
+    text-align: center;
+    margin: 1rem 0;
+
+
+}
+
+.user__image__div {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.user__image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: contain;
+}
+
+.user__image:hover+.user__publication__info,
+.user__image__div:hover .user__publication__info {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+
+.user__publication__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    flex-direction: column;
+    transition: all 0.5s ease;
+}
+
+.user__publication__info p,
+h2 {
+    margin: 0.5rem;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.user__btn__link {
+    text-decoration: none;
+    color: white;
+    background: var(--blue);
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+
+.user__btn__link:hover {
+    background: var(--darkblue);
+}
+
+.user__image:hover+.user__div__btns,
+.user__image__div:hover .user__div__btns {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.user__div__btns {
+
+    display: none;
+    position: absolute;
+    bottom: 0;
+    top: 0.5rem;
+    right: 0;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.user__publication__icon {
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.user__Description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+}
+
+.user__btns_flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+.user__trash_icon {
+    border: none;
+    background: #fff;
+    
+
+}
+
+.user__btn__delete {
+    border: none;
+    width: 55px;
+    background: transparent;
+    padding: 1.3rem 1rem;
+}
+
+.user__trash_icon:hover {
+    border: none;
+    color: #f00;
+    cursor: pointer;
+}
+.user_edit_icon{
+    width: 55px;
+    padding: 1rem;
+}
+.user__btn_edit{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+.user__btn_edit:hover {
+    background: #ddd;
+    border-radius: 100%;
+}
+.user__btn__delete:hover {
+    background: #ddd;
+    border-radius: 100%;
+}

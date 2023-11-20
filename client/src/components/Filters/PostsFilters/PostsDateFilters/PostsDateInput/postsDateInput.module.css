@@ -1,0 +1,56 @@
+
+
+.DateInput {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+    .DateInput__button {
+        background-color: var(--blue);
+        color: white;
+        width: 80%;
+        min-height: 30px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: background-color 0.2s;
+    }
+    .DateInput__button:hover {
+        background-color: var(--darkblue);
+    }
+    #active {
+        background-color: var(--darkblue);
+    }
+
+    .DateInput__datePicker {
+        position: absolute;
+        z-index: 10;
+        bottom: 100%;
+        left: 8%;
+        user-select: none;
+    }
+
+    .DateInput__Icon {
+        background-color: var(--blue);
+        width: 30px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    .DateInput__Icon:hover {
+        background-color: var(--darkblue)
+    }
+
+    .icon {
+        color: white;
+        height: 70%;
+        width: 70%;
+    }

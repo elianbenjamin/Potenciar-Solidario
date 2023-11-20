@@ -1,0 +1,326 @@
+@font-face {
+  font-family: "FuenteBold";
+  src: url("../../fonts/VisbyRoundCF-DemiBold.otf");
+  
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.title p {
+  display: flex;
+  font-family: "FuenteBold";
+}
+.errores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 4vh;
+  max-height: 4vh;
+  font-size: 0.6rem;
+  color: red;
+}
+.errores h3{
+  color: red;
+
+}
+
+.title h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.text {
+  padding: 2rem;
+  margin: 50px;
+  box-shadow: -2px -1px 6px 6px #fff;
+  border: 1px solid #cbd5e1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  min-height: 100vh;
+}
+.container h1 {
+  font-size: 3em;
+  font-family: "FuenteBold";
+  font-style: bold;
+}
+.container p {
+  font-size: 1.06em;
+  margin: 5px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 2.5em;
+}
+.div {
+  padding: 10px;
+  margin: 10px;
+}
+.container h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 10px;
+}
+.container h3 {
+  font-family: "FuenteBold";
+}
+.container label {
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+.response {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(126, 126, 126, 0.212);
+  margin: 2rem;
+  padding: 0.6rem;
+  height: max-content;
+  width: 50vw;
+  max-width: 55vw;
+  min-width: 60vw;
+  background-color: rgba(126, 126, 126, 0.212);
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.comment {
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.comment textarea {
+  margin-bottom: 0.4rem;
+  width: 20vw;
+}
+
+.button:hover {
+  background: #095184bb;
+  transition: 0.2s;
+}
+.comment p {
+  font-family: "FuenteBold";
+}
+.response p {
+  font-size: 1.3em;
+}
+.response a {
+  color: #00000062;
+  font-family: "FuenteBold";
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+.response a:hover {
+  color: #042685;
+}
+
+.question {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.buttonEdit{
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #095084;
+  border: #095084;
+  transition: 0.2s;
+  color: #fff;
+  transition: 0.2s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonError {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 0, 0, 0.856);
+  border: #ff0000;
+  transition: 0.2s;
+  color: #fff;
+  transition: 0.2s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonError:hover {
+  background: #a51818;
+}
+.question textarea {
+  width: 40vw;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: self-start;
+  padding: 0.4rem;
+}
+.date a {
+  display: flex;
+  align-items: center;
+  /* margin: 1rem; */
+  font-size: 0.9rem;
+}
+.h5 {
+  margin: 0.4rem;
+}
+.response p {
+  display: flex;
+  flex-direction: row;
+}
+.div1 {
+  border-bottom: 1px solid rgba(126, 126, 126, 0.212);
+  width: 100vw;
+  max-width: 70vw;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div1 p {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+.buttonDisable {
+  display: flex;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #095084;
+  border: #095084;
+  transition: 0.2s;
+  color: #fff;
+  transition: 0.2s;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+  left: 40%;
+  margin: 10px;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(68, 68, 68, 0.446);
+  padding: 0.8rem;
+  margin: 0.4rem;
+
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.containComments {
+  display: flex;
+  flex-direction: column;
+}
+.comments p {
+  font-size: 0.8rem;
+}
+.comments h3 {
+  font-size: 0.8rem;
+  margin-left: 0;
+}
+.comments h4 {
+  font-size: 0.7rem;
+  color: #7d7d7d;
+}
+.edit {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.edit a {
+  margin: 0.4rem;
+}
+.editAnwer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8rem;
+}
+.editAnwer input {
+  padding: 0.6rem;
+  width: 100%;
+  margin: 0.6rem;
+  border: 1px rgba(96, 96, 96, 0.304) solid;
+  height: 4rem;
+  min-height: 4rem;
+  max-height: fit-content;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 575.98px) {
+  .question textarea {
+    width: 70vw;
+    height: 20vh;
+  }
+  .response {
+    font-size: 0.6rem;
+    max-width: none;
+  }
+  .contain {
+    width: 80vw;
+  }
+  .div1 {
+    max-width: 90vw;
+  }
+  .comments {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .response {
+    font-size: 0.7rem;
+    width: 70vw;
+  }
+}

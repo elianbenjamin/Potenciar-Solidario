@@ -1,0 +1,38 @@
+.Orderings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .Orderings__select {
+        width: 90%
+    }
+
+    .Orderings__radioInputs {
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+        justify-content: space-around;
+    }
+        .RadioInputs__Option {
+            display: flex;
+            flex-direction: column;
+            gap: 5px
+        }   
+
+        .label {
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+        } 
+        .input {
+            height: 17px;
+            cursor: pointer
+        }
+
+        
+      

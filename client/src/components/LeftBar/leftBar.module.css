@@ -1,0 +1,129 @@
+.LeftBar {
+    width: 30%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid #526387 1px;
+    box-shadow: 8px 0px 15px -6px rgba(0, 0, 0, 0.75);
+}
+
+    .LeftBar__Buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 13px 0;
+        gap: 10px;
+    }
+
+        .button {
+            color: inherit;
+            height: 70px;
+            max-height: 100px;
+            width: 90%;
+            max-width: 90%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: var(--lightblue);
+            transition: border, color, background-color 0.2s;
+            border: solid #526387 2px;
+        }
+            
+        .button:hover {
+            background-color: var(--darkblue);
+            color: white;
+        }
+
+        .select {
+            width: 90%;
+        }
+
+    
+
+    .Filters {
+        border-top: solid #526387 1px;
+        flex: 1;
+        width: 100%;
+        user-select: none;
+    }
+        .Filters__Buttons {
+            display: flex;
+            justify-content: space-around;
+            padding: 13px;
+        }
+            .Buttons__button {
+                height: 40px;
+                border: solid #526387 2px;
+                border-radius: 10px;
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--lightblue);
+                transition: border, color, background-color 0.2s;
+                font-size: 1.2em;
+            }
+            .Buttons__button:hover {
+                background-color: var(--darkblue);
+                color: white;
+                cursor: pointer;
+            }
+
+    
+           
+
+#active {
+    background-color: var(--darkblue);
+    color: white;
+    cursor: inherit;
+    /* border: solid var(--lightblue) 4px; */
+}
+
+
+@media screen and (max-width: 1145px) {
+    .Buttons__button {
+        width: 45%
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .LeftBar {
+        width: 100%;
+    }
+    .LeftBar__Buttons {
+        flex-direction: row;
+        width: 97%;
+    }
+    #LeftBar__Filters {
+        flex-direction: column;
+    }
+    .Filters-Button {
+        background-color: var(--blue);
+        border-radius: 0;
+        min-width: 100%;
+        min-height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .Filters-Button__text {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    .Filters-Button__Icon {
+        height: 30px;
+        width: 30px;
+    }
+    
+}
+
+    

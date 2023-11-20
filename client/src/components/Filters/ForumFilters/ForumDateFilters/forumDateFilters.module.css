@@ -1,0 +1,12 @@
+.Filters__date {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.Filters__date p {
+    text-align: center;
+    font-weight: 600;
+    margin: 5px 0;
+    margin-right: 45px;
+}
+

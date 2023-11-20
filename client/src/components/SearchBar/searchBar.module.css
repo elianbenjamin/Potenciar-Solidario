@@ -1,0 +1,25 @@
+.SearchBar {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue);
+}
+
+
+    .SearchBar input {
+        width: 50%;
+        height: 75%;
+        border-radius: 4px;
+        border: none;
+        background-color: #EFEFEF;
+        padding-left: 5px;
+        font-family: inherit;
+    }
+
+@media screen and (max-width: 768px) {
+    .SearchBar input {
+        width: 80%
+    }
+}

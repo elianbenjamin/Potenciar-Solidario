@@ -1,0 +1,203 @@
+
+.Post {
+    width: 680px;
+    margin: 10px 30px;
+    background-color: var(--lightblue);
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s;
+    transform: scale(1);
+    border: solid #526387 2px;
+    border-radius: 7px;
+}
+.Post:hover {
+    transform: scale(1.02);
+}
+
+
+    .Post__title {
+        border-bottom: solid black 1px;
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: var(--darkblue);
+        color: white;
+        padding: 0 4px;
+        padding-bottom: 6px;
+    }
+
+   
+
+    .Post__OrganizationAndCategory {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: var(--blue);
+        color: rgb(225, 225, 225);
+    }
+
+        .OrganizationContainer {
+            border-bottom: solid white 1px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2px;
+            padding-bottom: 2px; 
+            line-height: 1.1em;
+        }
+   
+            .organizationName {
+                font-weight: 500;
+            }
+            
+
+            .Post__category {
+                font-weight: bolder;
+                right: 1%;
+                top: 28px;
+                color: rgb(225, 225, 225);
+                margin-bottom: 3px;
+            }
+
+    .Post__description {
+        flex: 1;
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.25em; 
+        border-top: solid black 1px;
+        border-bottom: solid black 1px;
+        position: relative;
+        overflow: hidden;
+    }
+    .Post__description p {
+        margin: 5px;
+    }
+ 
+    .image {
+
+        max-width: 100%;
+        height: auto;
+        margin:  auto;
+        box-shadow: 0 0 1200px 0 rgba(0, 0, 0, 0.771);
+    }
+    .imageBlur {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+        filter: blur(10px);
+    }
+
+
+    .Post__BottomBar {
+        min-height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--darkblue);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 2px
+    }
+        .BottomBar__calendarIcon {
+            color: white;
+            width: 30px;
+            height: 30px;
+        }
+        .BottomBar__startDate {
+            color: white;
+            display: inline;
+            margin-left: 5px;
+            padding-right: 5px;
+            font-size: 1.3em;
+            border-right: solid gray 1px;
+        }
+       
+        
+        .BottomBar__SocialIcons {
+            margin: 0 5px;
+            width: 71.5%;
+            display: flex;
+        }
+            .SocialIcons__likeContainer {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: background-color 0.3s;
+            }
+                .likeNumber {
+                    color: white;
+                    font-size: 1.2em;
+                    margin-left: 5px;
+                }
+            .SocialIcons__likeContainer:hover {
+                background-color: var(--blue)
+            }
+                .likeIcon {
+                    color: white;
+                    width: 30px;
+                    height: 30px;
+                }
+            .SocialIcons__commentContainer {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: background-color 0.3s;
+            }
+            .SocialIcons__commentContainer:hover {
+                background-color: var(--blue)
+            }         
+                .commentIcon {
+                    color: white;
+                    width: 30px;
+                    height: 30px;
+                }
+
+        
+
+
+    .BottomBar__OptionsContainer {
+        position: relative;
+        border-radius: 5px;
+        height: 35px;
+        width: 35px;
+        transition: background-color 0.2s;
+        padding: 5px
+    }
+    .BottomBar__OptionsContainer:hover {
+        background-color: var(--blue);
+    }
+        .BottomBar__optionsIcon {
+            height: 100%;
+            width: 100%;
+            color: white;
+        } 
+        
+
+  
+
+@media screen and (max-width: 992px) {
+    .Post {
+       width: 97%;
+       margin: 10px 0;
+    }
+}
+@media screen and (max-width: 465px) {
+    .OrganizationContainer {
+        flex-direction: column;
+        line-height: 18px;
+    }
+    .Post__title {
+        line-height: 0.9em;
+    }
+}

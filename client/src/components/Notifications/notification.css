@@ -1,0 +1,9 @@
+.ant-notification-notice-message {
+    color: #005692 !important;
+    cursor: pointer !important;
+    font-size:1.1rem !important;
+}
+
+.ant-notification-notice-description{
+    font-size:1.2rem !important;
+}

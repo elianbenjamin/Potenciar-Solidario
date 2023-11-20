@@ -1,0 +1,76 @@
+:root {
+  line-height: 1.2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --darkblue: #0f3054;
+  --blue: #005692;
+  --lightblue: #a4d4ff;
+  
+
+}
+
+@font-face {
+  font-family: "Visby Round CF";
+  src: url('./fonts/VisbyRoundCF-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-DemiBold.otf');
+  font-weight: 600; /* Valor aproximado para DemiBold */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-ExtraBold.otf');
+  font-weight: 800; /* Valor aproximado para ExtraBold */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-ExtraLight.otf');
+  font-weight: 200; /* Valor aproximado para ExtraLight */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-Heavy.otf');
+  font-weight: 900; /* Valor aproximado para Heavy */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-Light.otf');
+  font-weight: 300; /* Valor aproximado para Light */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-Medium.otf');
+  font-weight: 500; /* Valor aproximado para Medium */
+}
+
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('./fonts/VisbyRoundCF-Regular.otf');
+  font-weight: 400; /* Valor aproximado para Regular */
+}
+
+
+* {
+  font-family: "Visby Round CF";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-height: 100vh;
+  overflow: scroll;  
+}
+

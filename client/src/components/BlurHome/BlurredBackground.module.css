@@ -1,0 +1,35 @@
+.blurredBackground {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8); 
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .content {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+.title{
+    margin-bottom: 0.3rem;
+}
+
+
+  
+  
+  
