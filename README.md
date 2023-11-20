@@ -12,3 +12,4 @@
 
 
 <br />
+![image](https://github.com/elianbenjamin/Potenciar-Solidario/assets/118304676/16c65aca-5b80-4523-ae44-d956dca53126)
